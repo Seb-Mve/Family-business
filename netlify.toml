@@ -1,0 +1,4 @@
+[build]
+  base = "quete-familiale"
+  command = "npm run build"
+  publish = "quete-familiale/out"

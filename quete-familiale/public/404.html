@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>La Quête Familiale</title>
+    <script>
+      // SPA redirect pattern for GitHub Pages
+      // Encode the path and redirect to root app
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.host + '/quete-familiale/' +
+        '?p=' + encodeURIComponent(l.pathname.slice('/quete-familiale'.length) + (l.search || '') + (l.hash || ''))
+      );
+    </script>
+  </head>
+  <body>
+    <p>Chargement...</p>
+  </body>
+</html>
